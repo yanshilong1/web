@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>yan</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>123456</param-value>
+    </context-param>
+
+
+
+    //================================================>
+    <context-param>
+         <param-name>driver</param-name>
+        <param-value>com.ee.see.dfd.dd.fd</param-value>
+    </context-param>
+
+
+    <context-param>
+        <param-name>hahahaha </param-name>
+        <param-value>com.eerrer.stu.com</param-value>
+    </context-param>
+
+
+
+<servlet>
+    <init-param>
+        <param-name>user</param-name>
+        <param-value>yan</param-value>
+
+            <param-value>user2</param-value>
+            <param-value>pbbbb</param-value>
+
+
+    </init-param>
+//init 配置初始化参数，并且必须在load-on前面
+
+    <servlet-name>qqqq</servlet-name>
+    <servlet-class>org.test1</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>qqqq</servlet-name>
+    <url-pattern>/hello</url-pattern>
+</servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>test</servlet-name>
+       <servlet-class>org.loginSerevlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+
+        <url-pattern>/loginSerlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>jue</servlet-name>
+        <servlet-class>org.work1.LoginServlet1</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jue</servlet-name>
+        <url-pattern>/check</url-pattern>
+    </servlet-mapping>
+<!--===========================================================-->
+    <!--<servlet>-->
+        <!--<servlet-name>fan</servlet-name>-->
+        <!--<servlet-class>org.</servlet-class>-->
+    <!--</servlet>-->
+
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>org.work1.work1Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/work1Servlet</url-pattern>
+    </servlet-mapping>
+</web-app>
